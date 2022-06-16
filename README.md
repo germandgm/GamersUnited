@@ -7,4 +7,4 @@ En la carpeta [`mockups`](/mockups/) se encuentran los mockups de la app.
 # Historias de usuario
 [PP3 User Stories](https://github.com/users/germandgm/projects/1/views/1)
 o
-el Archivo ['User Stories.xlsx'](User Stories.xlsx) en el repositorio con mas detalles
+el Archivo [User Stories.xlsx](https://github.com/germandgm/GamersUnited/blob/main/User%20Stories.xlsx) en el repositorio con mas detalles
