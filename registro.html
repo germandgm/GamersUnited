@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/Font-Awesome/css/all.min.css">
+    <!--<link rel="stylesheet" href="node_modules/Font-Awesome/css/all.min.css">-->
 </head>
 <body>
     <section id="header">
@@ -18,17 +18,16 @@
         <div>
             <ul id="navbar">
               <li><a href="index.html">Inicio</a></li>
-              <li><a href="tienda.html">Tienda</a></li>
               <li><a href="about.html">Sobre Nosotros</a></li>
               <li><a href="contact.html">Contacto</a></li>
               <li><a class="active" href="registro.html">Registrarse</a></li>
               <li><a href="login.html">Ingresar</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                <li id="lg-bag"><a href="index.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
                 <a href="#" id="close"><i class="fa-regular fa-lock"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            <a href="index.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
@@ -42,27 +41,26 @@
             <div class="card-body p-5">
               <h2 class="text-uppercase text-center mb-5">Registrate</h2>
 
-              <form>
+              <form id="form" class="add">
 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                  <input type="text" name="nombre" id="form3Example1cg" class="form-control form-control-lg" required />
                   <label class="form-label" for="form3Example1cg">Nombre completo</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example3cg">Correo electronico</label>
+                  <input type="email" name="correo" id="form3Example2cg" class="form-control form-control-lg" required/>
+                  <label class="form-label" for="form3Example2cg">Correo electronico</label>
                 </div>
-
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                  <input type="text" name="direccion" id="form3Example3cg" class="form-control form-control-lg" required />
+                  <label class="form-label" for="form3Example3cg">Direccion completa</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="password" name="contrasena" id="form3Example4cg" class="form-control form-control-lg" required />
                   <label class="form-label" for="form3Example4cg">Contraseña</label>
                 </div>
-
-                <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example4cdg">Repetir contraseña</label>
-                </div>
+                
                 <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
                 <div class="form-check d-flex justify-content-center mb-5">
                   
@@ -72,8 +70,8 @@
                 </div>
 
                 <div class="d-flex justify-content-center">
-                  <button type="button"
-                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Registrarse</button>
+                  <button
+                    type="submit" id="registro-boton" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Registrarse</button>
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">Ya tienes una cuenta? <a href="#!"
@@ -147,7 +145,8 @@
         </div>
     </footer>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="script.js"></script>
     
+    <script type="module" src="/services/registro.js"></script>
+    <script src="responsiveNav.js"></script>
 </body>
 </html>

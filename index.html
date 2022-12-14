@@ -7,10 +7,12 @@
     <title>Gamers United</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/14827af5d5.js" crossorigin="anonymous"></script>
+    
     <link type="text/css" rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/Font-Awesome/css/all.min.css">
+    <script src="/carrito.js" async></script>
 </head>
 <body>
     <section id="header">
@@ -18,23 +20,17 @@
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="about.html">Sobre Nosotros</a></li>
                 <li><a href="contact.html">Contacto</a></li>
                 <li><a href="registro.html">Registrarse</a></li>
-                <li><a href="login.html">Ingresar</a></li>
-
-                <li id="lg-bag">
-                    <a href="cart.html">
-                        <i class="fa-solid fa-cart-arrow-down"></i>
-                    </a>
-                </li>
-                
+                <li><a href="login.html">Ingresar</a></li> 
+                <li id="lg-bag"><a href="#carrito-section"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
                 <a href="#" id="close"><i class="fa-regular fa-lock"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html" id="checkout">
+            
+            <a href="#carrito-section" id="checkout">
                 <i class="fa-solid fa-cart-arrow-down"></i>
             </a>
             <i id="bar" class="fas fa-outdent"></i>
@@ -51,135 +47,71 @@
         <h2>Seleccion de productos</h2>
         <p>Bajos precios</p>
         <div id="product-container" class="pro-container">
-            <!--<div class="pro">
-                <img src="imagenes/products/3070ti.jpg" alt="">
-                <div class="des">
-                    <span>Nvidia</span>
-                    <h5>RTX 3070 TI</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>ARS109,000</h4>
-                </div>    
-                <button class="cart-prod" onclick="add('3070ti', 109000)"><img src="imagenes/cart-prod.png" alt=""></button>
-            </div>
-            <div class="pro">
-                <img src="imagenes/products/3080tiasus.jpg" alt="">
-                <div class="des">
-                    <span>Nvidia</span>
-                    <h5>RTX 3080 TI</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>ARS 169,000</h4>
-                </div>    
-                <button class="cart-prod" onclick="add('3080ti', 169000)"><img src="imagenes/cart-prod.png" alt=""></button>
-            </div>
-            <div class="pro">
-                <img src="imagenes/products/4090zotac.jpeg" alt="">
-                <div class="des">
-                    <span>Nvidia</span>
-                    <h5>RTX 4090</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>ARS 504,000</h4>
-                </div>    
-                <button class="cart-prod" onclick="add('4090', 504000)"><img src="imagenes/cart-prod.png" alt=""></button>
-            </div>
-            <div class="pro">
-                <img src="imagenes/products/3060.jpg" alt="">
-                <div class="des">
-                    <span>Nvidia</span>
-                    <h5>RTX 3060</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>ARS 99,000</h4>
-                </div>    
-                <button class="cart-prod" onclick="add('3060', 99000)"><img src="imagenes/cart-prod.png" alt=""></button>
-            </div>
-            <div class="pro">
-                <img src="imagenes/products/xt6700.jpg" alt="">
-                <div class="des">
-                    <span>AMD</span>
-                    <h5>Radeon XT 6700</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>ARS 119,000</h4>
-                </div>    
-                <button class="cart-prod" onclick="add('xt6700', 119000)"><img src="imagenes/cart-prod.png" alt=""></button>
-            </div>
-            <div class="pro">
-                <img src="imagenes/products/xt6800.jpg" alt="">
-                <div class="des">
-                    <span>AMD</span>
-                    <h5>Radeon XT 6800</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>ARS 124,000</h4>
-                </div>    
-                <button class="cart-prod" onclick="add('xt6800', 124000)"><img src="imagenes/cart-prod.png" alt=""></button>
-            </div>
-            <div class="pro">
-                <img src="imagenes/products/xt6900.jpeg" alt="">
-                <div class="des">
-                    <span>AMD</span>
-                    <h5>Radeon XT 6900</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>ARS139,000</h4>
-                </div>    
-                <button class="cart-prod" onclick="add('xt6900', 139000)"><img src="imagenes/cart-prod.png" alt=""></button>
-            </div>
-            <div class="pro">
-                <img src="imagenes/products/xt6950.jpeg" alt="">
-                <div class="des">
-                    <span>AMD</span>
-                    <h5>Radeon XT 6950</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>ARS189,000</h4>
-                </div>    
-                <button class="cart-prod" onclick="add('3070ti', 189000)"><img src="imagenes/cart-prod.png" alt=""></button>
-            </div>-->
+            
         </div>
+        <!--<div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src="Images/Album 1.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>-->
+    </section>
+    <section class="container content-section">
+        <h2  class="section-header">ARTICULOS DE PRUEBA CARRITO</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">RTX 3070ti</span>
+                <img class="shop-item-image" src="imagenes/products/3070ti.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$190.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">AÑADIR</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">RTX 3080ti</span>
+                <img class="shop-item-image" src="imagenes/products/3080tiasus.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$6.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">AÑADIR</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">RTX 3060</span>
+                <img class="shop-item-image" src="imagenes/products/3060.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$150.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">AÑADIR</button>
+                </div>
+            </div>
+            <div id="carrito-section" class="shop-item">
+                <span class="shop-item-title">God of War Ragnarok</span>
+                <img class="shop-item-image" src="Imagenes/products/gowrps5.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$60.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">AÑADIR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">CARRITO</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ARTICULO</span>
+            <span class="cart-price cart-header cart-column">PRECIO</span>
+            <span class="cart-quantity cart-header cart-column">CANTIDAD</span>
+        </div>
+        <div class="cart-items">
+            
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
     </section>
     <section id="banner" class="section-m1">
         <h4>Servicio Tecnico</h4>
@@ -197,6 +129,7 @@
             <button class="normal">Suscribirse</button>
         </div>
     </section>
+    
     <footer class="section-p1">
         <div class="col">
             <img src="imagenes/logo.png" class="logo" alt="">
@@ -246,5 +179,6 @@
     </footer>
     
     <script type="module" src="main.js"></script>
+    <script src="responsiveNav.js"></script>
 </body>
 </html>
