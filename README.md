@@ -1,4 +1,4 @@
-# GamersUnited
+# GamersUnited netlify host: [Proyecto hosteado](https://gamersunited-web.netlify.app) PD no anda firebase
 proyecto pp3
 # Anteproyecto
 El anteproyecto está definido en este [documento](https://drive.google.com/file/d/1Qs5E6DYQLrGiizaLAWP8_3dCXG5wlk0d/view?usp=sharing)
