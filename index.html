@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/Font-Awesome/css/all.min.css">
-    <script src="/carrito.js" async></script>
+    <script type="module" src="/carrito.js" async></script>
 </head>
 <body>
     <section id="header">
@@ -41,7 +41,7 @@
         <h2>Que los FPS</h2>
         <h1>No te detengan.</h1>
         <p id="cuotastexto">Aprovecha nuestros ofertas insuperables!</p>
-        <button>Compra Ahora</button>
+        
     </section>
     <section id="product1" class="section-p1">
         <h2>Seleccion de productos</h2>
@@ -116,19 +116,22 @@
     <section id="banner" class="section-m1">
         <h4>Servicio Tecnico</h4>
         <h2><span>Descuento</span> en reparaciones si el producto lo compraste con nosotros.</h2>
-        <button class="normal">Saber mas</button>
+        <button href class="normal"><a href="contact.html">Saber mas</a></button>
     </section>
 
-    <section id="newsletter" class="section-p1 section-m1">
+    <!--<section id="newsletter" class="section-p1 section-m1">
+        <form class="add" action="">
         <div class="newstext">
+            
             <h4>Suscribete a nuestro boletin informativo</h4>
             <p>Recibe avisos sobre productos y <span>ofertas.</span></p>
         </div>
         <div class="form">
             <input type="text" placeholder="Tu Correo electronico">
-            <button class="normal">Suscribirse</button>
+            <button class="normal" type="submit">Suscribirse</button>
         </div>
-    </section>
+    </form>
+    </section>-->
     
     <footer class="section-p1">
         <div class="col">
@@ -179,7 +182,7 @@
     </footer>
     
     
-    <script src="responsiveNav.js"></script>
-    <script type="module" src="api/main.js"></script>
+    <script type="module" src="responsiveNav.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
